@@ -7,6 +7,7 @@ public interface developerService {
 	Developer  saveDeveloper(Developer developer);
 	Developer getDeveloperById(Long id);
 	Developer saveDeveloperEdit(Developer Developer);
+	void deleteDeveloper(Long id);
 	
 
 }

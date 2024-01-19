@@ -48,6 +48,12 @@ return "add_developer";
 		developerservice.saveDeveloperEdit(existingDeveloper);
 		return "redirect:/developers";
 	}
+	@GetMapping("/developers/{id}")
+	public String deleteDeveloper(@PathVariable Long id) {
+		developerservice.deleteDeveloper(id);
+		return "redirect:/developers";
+	}
+	
 	public developerService getDeveloperservice() {
 		return developerservice;
 	}

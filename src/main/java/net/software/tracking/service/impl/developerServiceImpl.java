@@ -39,5 +39,10 @@ private DeveloperRepository developerrepository;
 		// TODO Auto-generated method stub
 		return developerrepository.save(Developer);
 	}
+	@Override
+	public void deleteDeveloper(Long id) {
+		// TODO Auto-generated method stub
+		developerrepository.deleteById(id);
+	}
 
 }

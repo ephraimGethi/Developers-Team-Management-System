@@ -42,7 +42,7 @@ crossorigin="anonymous">
       <td th:text = "${developer.daysAvailable}"></td>
       <td th:text = "${developer.contribution }"></td>
       <td> <a class="btn btn-primary" th:href="@{/developers/edit/{id}(id=${developer.id})}">update Developer</a>
-        <a class="btn btn-danger">Remove</a>
+        <a class="btn btn-danger" th:href = "@{/developers/{id}(id=${developer.id})}">Remove</a>
       </td>
     </tr>
   </tbody>
